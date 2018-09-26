@@ -4,7 +4,7 @@ import re
  
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("dewanshrawat15@gmail.com", "477FF945de")
+server.login("", "")
 
 with open('db.csv') as data:
 	row = csv.DictReader(data)

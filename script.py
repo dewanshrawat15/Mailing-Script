@@ -1,8 +1,8 @@
-SMTPserver = 'mail.edcbvucoep.com'
-sender = 'contact@edcbvucoep.com'
+SMTPserver = ''
+sender = ''
 
-USERNAME = "edcbvucoep"
-PASSWORD = "Edcbvucoe@1234"
+USERNAME = ""
+PASSWORD = ""
 
 # typical values for text_subtype are plain, html, xml
 
