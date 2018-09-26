@@ -2,9 +2,11 @@ import smtplib
 import csv
 import re
  
+username = ""
+password = ""
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("", "")
+server.login(username, password)
 
 with open('db.csv') as data:
 	row = csv.DictReader(data)
