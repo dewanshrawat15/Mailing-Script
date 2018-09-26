@@ -15,4 +15,4 @@ Any system with python 3 (preferably 3.6) and terminal.
 None as of now. Feel free to open an issue if any!
 
 # License
-~~~ The MIT License
+> The MIT License
