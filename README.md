@@ -1,5 +1,7 @@
 # Mailing Script
-A simple program to send emails. mail.py is used to send emails from a .csv file using gmail servers. script.py is used for custom domains, through cpanel logins.
+Two simple scripts to send emails.
+- mail.py is used to send emails from a .csv file using gmail servers.
+- script.py is used for custom domains, through cpanel logins.
 
 # Requirement
 Any system with python 3 (preferably 3.6) and terminal.
