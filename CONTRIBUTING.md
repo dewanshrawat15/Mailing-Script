@@ -7,7 +7,7 @@ That's great. We are happy to have you!
 ## Opening Issues
 
 - Search for your problem in the
-[issues section](https://github.com/ritiek/spotify-downloader/issues)
+[issues section](https://github.com/dewanshrawat15/Mailing-Script/issues)
 before opening a new ticket. It might be already answered and save both you and us time. :smile:
 - Provide as much information as possible when opening your ticket, including any relevant examples (if any).
 - If your issue is a *bug*, make sure you pass `--log-level=DEBUG` when invoking
