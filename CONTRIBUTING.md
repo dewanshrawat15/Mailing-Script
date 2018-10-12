@@ -1,17 +1,17 @@
 # Contributing
 
 - Want to contribute to [Mailing-Script](https://github.com/dewanshrawat15/Mailing-Script)?
-That's great. We are happy to have you!
+That's great. I am happy to have you!
 - Here is a basic outline on opening issues and making PRs:
 
 ## Opening Issues
 
 - Search for your problem in the
 [issues section](https://github.com/dewanshrawat15/Mailing-Script/issues)
-before opening a new ticket. It might be already answered and save both you and us time. :smile:
+before opening a new ticket. It might be already answered and save both you and me time. :smile:
 - Provide as much information as possible when opening your ticket, including any relevant examples (if any).
 - If your issue is a *bug*, make sure you pass `--log-level=DEBUG` when invoking
-`spotdl.py` and paste the output in your issue.
+`script.py` or `mail.py` and paste the output in your issue.
 - If you think your question is naive or something and you can't find anything related,
 don't feel bad. Open an issue any way!
 
