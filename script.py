@@ -1,27 +1,36 @@
-SMTPserver = ''
-sender = ''
-
-USERNAME = ""
-PASSWORD = ""
-
 # typical values for text_subtype are plain, html, xml
 
 subject="Invite for Startup Conclave 2.0 : EDC BVUCOEP"
 
 import sys
-import os
+from os import name, system
 import re
 import csv
 import time
-
-from smtplib import SMTP_SSL as SMTP       # this invokes the secure SMTP protocol (port 465, uses SSL)
-# from smtplib import SMTP                  # use this for standard SMTP protocol   (port 25, no encryption)
-
-# old version
-# from email.MIMEText import MIMEText
+from smtplib import SMTP_SSL as SMTP
 from email.mime.text import MIMEText
+from getpass import getpass
 
-with open('db.csv') as data:
+
+def clear():
+    if name=='nt':
+        _ = system('cls')
+    else:
+        _ = system('clear')
+
+clear()
+print("Ensure you have saved your database file in the .csv format in this very directory!")
+time.sleep(5)
+db = input("Enter the database file name with the extension: ")
+
+SMTPserver = input("Enter server address: ")
+sender = input("Email through which mails are to be sent: ")
+
+USERNAME = input("Enter cpanel username: ")
+PASSWORD = getpass("Enter cpanel password: ")
+
+
+with open(''+db+'') as data:
     row = csv.DictReader(data)
     for line in row:
         conn = SMTP(SMTPserver)
