@@ -1,30 +1,32 @@
-SMTPserver = ''
-sender = ''
-
-USERNAME = ""
-PASSWORD = ""
-
-# typical values for text_subtype are plain, html, xml
-
-subject=""                                  # subject of the email
-
 import sys
-import os
+from os import name, system
 import re
 import csv
 import time
-
-from smtplib import SMTP_SSL as SMTP        # this invokes the secure SMTP protocol (port 465, uses SSL)
-# from smtplib import SMTP                  # use this for standard SMTP protocol   (port 25, no encryption)
-
-# old version
-# from email.MIMEText import MIMEText
+from smtplib import SMTP_SSL as SMTP
 from email.mime.text import MIMEText
+from getpass import getpass
 
-conn = SMTP(SMTPserver)
-conn.set_debuglevel(False)
-conn.login(USERNAME, PASSWORD)
-with open('tbm.csv') as data:
+
+def clear():
+    if name=='nt':
+        _ = system('cls')
+    else:
+        _ = system('clear')
+
+clear()
+print("Ensure you have saved your database file in the .csv format in this very directory!")
+time.sleep(5)
+
+SMTPserver = input("Enter server address: ")
+sender = input("Email through which mails are to be sent: ")
+USERNAME = input("Enter cpanel username: ")
+PASSWORD = getpass("Enter cpanel password: ")
+
+db = input("Enter the database file name with the extension: ")
+subject= input("Enter the subject of the email: ")
+
+with open(''+db+'') as data:
     row = csv.DictReader(data)
     for line in row:
         name = line['First Name']
@@ -32,7 +34,6 @@ with open('tbm.csv') as data:
         text_subtype = 'html'               
         # content
         content="""\
-
         """                                 
         msg = MIMEText(content, text_subtype)
         try:
@@ -51,5 +52,3 @@ with open('tbm.csv') as data:
             exit()
 
 conn.quit()
-# except:
-#     sys.exit( "mail failed; %s" % "CUSTOM_ERROR" ) # give an error message
