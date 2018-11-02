@@ -18,6 +18,6 @@ don't feel bad. Open an issue any way!
 - Look up for open issues and see if you can help out there.
 - When making a PR, point it to the [master branch](https://github.com/dewanshrawat15/Mailing-Script/tree/master)
 unless mentioned otherwise.
-- If you are planning to work on something big, let me know through an issue. So I can discuss more about it.
+- If you are planning to work on something big, let me know through an issue. So we can discuss more about it.
 - Lastly, please don't hesitate to ask if you have any questions!
 Let me know (through an issue) if you are facing any trouble making a PR, I'd be glad to help you out!
