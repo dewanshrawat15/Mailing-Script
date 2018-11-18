@@ -26,6 +26,11 @@ PASSWORD = getpass("Enter cpanel password: ")
 db = input("Enter the database file name with the extension: ")
 subject= input("Enter the subject of the email: ")
 
+print("Establishing connection with server")
+conn = SMTP(SMTPserver)
+conn.set_debuglevel(False)
+conn.login(USERNAME, PASSWORD)
+print("Login Succesful!")
 with open(''+db+'') as data:
     row = csv.DictReader(data)
     for line in row:
