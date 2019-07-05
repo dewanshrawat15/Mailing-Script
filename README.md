@@ -16,5 +16,8 @@ Any system with python 3 (preferably 3.6) and terminal.
 # Known Issue
 None as of now. Feel free to open an issue if any!
 
+# Wanna Contribute ?
+Aww, great. Just open up a new issue and let me know. Create a new branch, and submit a merge request for the same.
+
 # License
 > The MIT License
