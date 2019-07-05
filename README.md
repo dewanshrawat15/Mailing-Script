@@ -17,7 +17,7 @@ Any system with python 3 (preferably 3.6) and terminal.
 None as of now. Feel free to open an issue if any!
 
 # Wanna Contribute ?
-Aww, great. Just open up a new issue and let me know. Create a new branch, and submit a merge request for the same.
+Aww, great. Just go through [CONTRIBUTING.MD](https://github.com/dewanshrawat15/Mailing-Script/blob/master/CONTRIBUTING.md) once!
 
 # License
 > The MIT License
